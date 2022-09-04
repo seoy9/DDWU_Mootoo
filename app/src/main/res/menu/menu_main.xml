@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_search"
+        android:onClick="onMenuItemClick"
+        android:title="검색" />
+    <item android:title="분류" >
+        <menu >
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_old"
+                    android:checked="true"
+                    android:onClick="onMenuItemClick"
+                    android:title="작성순" />
+                <item
+                    android:id="@+id/menu_new"
+                    android:onClick="onMenuItemClick"
+                    android:title="최신순" />
+                <item
+                    android:id="@+id/menu_top"
+                    android:onClick="onMenuItemClick"
+                    android:title="평점 높은순" />
+                <item
+                    android:id="@+id/menu_low"
+                    android:onClick="onMenuItemClick"
+                    android:title="평점 낮은순" />
+                <item
+                    android:id="@+id/menu_location"
+                    android:onClick="onMenuItemClick"
+                    android:title="위치순" />
+            </group>
+        </menu>
+    </item>
+</menu>
